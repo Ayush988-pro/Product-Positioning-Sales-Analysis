@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sales | Strategic Product Placement</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar {
+    background: rgba(0,0,0,0.7);
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="index.html">SALES</a>
+
+    <!-- Toggle Button (Mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="story.html">Story</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+<div class="overlay"></div>
+
+<div class="container text-center hero-content">
+    <h1 class="display-4 fw-bold">
+        Strategic Product <br> Placement Analysis
+    </h1>
+    <p class="lead mt-3">
+        We are team of talented Data Analytics
+    </p>
+</div>
+</div>
+
+<!-- Bootstrap JS (IMPORTANT for menu toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
